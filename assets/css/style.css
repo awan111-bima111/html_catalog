@@ -1,0 +1,94 @@
+
+      /* Custom CSS for a truly opulent feel */
+      body {
+        background-color: #121212; /* Deep Charcoal */
+        color: #f5f0e6; /* Soft Off-White */
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 300;
+        overscroll-behavior: none;
+      }
+      h1,
+      h2,
+      h3,
+      .font-serif {
+        font-family: "Prata", serif;
+        font-weight: 400;
+      }
+      ::selection {
+        background-color: #e58a45;
+        color: #121212;
+      }
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #d4af37;
+        font-family: "Prata", serif;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        overflow: hidden;
+      }
+      .preloader-text span {
+        display: inline-block;
+      }
+      .hero-video-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+      .glassmorphism {
+        background: rgba(18, 18, 18, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .scroll-indicator {
+        transition: opacity 0.3s ease;
+      }
+      .btn-amber {
+        background: linear-gradient(145deg, #ffbf69, #e58a45);
+        color: #121212;
+        transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0 4px 20px rgba(229, 138, 69, 0.25);
+      }
+      .btn-amber:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 10px 30px rgba(229, 138, 69, 0.35);
+      }
+      .video-thumbnail::before {
+        content: "▶";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        font-size: 3rem;
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease, background 0.3s ease;
+        backdrop-filter: blur(5px);
+      }
+      .video-thumbnail:hover::before {
+        transform: translate(-50%, -50%) scale(1.1);
+        background: rgba(229, 138, 69, 0.7);
+      }
+      .modal {
+        transition: opacity 0.4s ease, backdrop-filter 0.4s ease;
+      }

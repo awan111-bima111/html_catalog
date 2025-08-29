@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roti Goreng Cokelat - A Symphony of Golden Amber</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- GSAP (GreenSock Animation Platform) CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+
+  </style>
+  <script>
+    // Tailwind CSS Customization
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: "#121212",
+            "off-white": "#F5F0E6",
+            amber: "#FFBF69",
+            "burnt-orange": "#E58A45",
+            bronze: "#CD7F32",
+            taupe: "#8B8589",
+          },
+          fontFamily: {
+            serif: ['"Prata"', "serif"],
+            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-charcoal text-off-white antialiased">
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div id="preloader-text" class="preloader-text">
+      <span>R</span><span>G</span><span>C</span><span>D</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 py-6 px-6 md:px-10 transition-all duration-500 opacity-0">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-serif font-bold tracking-widest text-amber">RGCD</a>
+      <nav class="hidden md:flex space-x-10 text-sm tracking-wider">
+
+        <a href="#deskripsi" class="nav-link relative group">
+          <span>The Story</span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-px bg-amber transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#about-us" class="nav-link relative group">
+          <span>About us</span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-px bg-amber transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#galeri" class="nav-link relative group">
+          <span>Showcase</span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-px bg-amber transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#multimedia" class="nav-link relative group">
+          <span>Multimedia</span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-px bg-amber transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#contact-me" class="nav-link relative group">
+          <span>Contact Me</span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-px bg-amber transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="opacity-0">
+    <!-- Hero Section -->
+    <section id="hero"
+      class="h-screen min-h-[700px] flex items-center justify-center text-white relative overflow-hidden">
+      <video autoplay loop muted playsinline class="hero-video-bg">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-chocolate-is-poured-onto-a-brownie-4937-large.mp4"
+          type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-charcoal/60"></div>
+      <div class="text-center z-10 p-6">
+        <div class="glassmorphism rounded-lg p-8 md:p-12">
+          <h1 id="hero-title" class="text-5xl md:text-7xl lg:text-8xl font-serif mb-4 text-off-white">
+            Golden Crispy, Molten Heart
+          </h1>
+          <p id="hero-subtitle" class="text-lg md:text-xl font-light tracking-widest text-amber">
+            Experience the Roti Goreng Cokelat Deluxe.
+          </p>
+        </div>
+      </div>
+      <a href="#deskripsi" class="scroll-indicator nav-link absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
+        <svg class="w-6 h-6 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </section>
+
+
+    <!-- Description Section -->
+    <section id="deskripsi" class="py-24 md:py-40 bg-charcoal">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16 md:mb-24">
+          <h2 class="gsap-reveal text-5xl md:text-6xl font-serif mb-6 text-amber">
+            The Journey of Flavor
+          </h2>
+          <p class="gsap-reveal text-lg leading-relaxed text-off-white/80">
+            This is more than a delicacy; it's a narrative of passion. A
+            journey that begins with sourcing the world's finest Belgian cacao
+            and ends with the perfect golden crisp that whispers excellence
+            with every bite.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+          <div class="gsap-reveal text-center">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2889&auto=format&fit=crop"
+              onerror="this.onerror=null;this.src='https://placehold.co/160x160/cd7f32/f5f0e6?text=Cacao';"
+              alt="Premium Belgian Chocolate"
+              class="rounded-full w-40 h-40 object-cover mx-auto mb-6 border-4 border-bronze/50" />
+            <h3 class="font-serif text-2xl mb-2 text-amber">Belgian Cacao</h3>
+            <p class="text-off-white/70">
+              Sourced for its deep, complex notes and velvety texture.
+            </p>
+          </div>
+          <div class="gsap-reveal text-center" data-gsap-delay="0.2">
+            <img src="https://images.unsplash.com/photo-1620912235851-a5836a1a1324?q=80&w=2787&auto=format&fit=crop"
+              onerror="this.onerror=null;this.src='https://placehold.co/160x160/cd7f32/f5f0e6?text=Dough';"
+              alt="Golden Crispy Dough"
+              class="rounded-full w-40 h-40 object-cover mx-auto mb-6 border-4 border-bronze/50" />
+            <h3 class="font-serif text-2xl mb-2 text-amber">
+              Golden Perfection
+            </h3>
+            <p class="text-off-white/70">
+              Fried to an exact temperature for the ultimate crispy shell.
+            </p>
+          </div>
+          <div class="gsap-reveal text-center" data-gsap-delay="0.4">
+            <img src="https://images.unsplash.com/photo-1606851184224-246b16c397fe?q=80&w=2800&auto=format&fit=crop"
+              onerror="this.onerror=null;this.src='https://placehold.co/160x160/cd7f32/f5f0e6?text=Core';"
+              alt="Molten Chocolate Core"
+              class="rounded-full w-40 h-40 object-cover mx-auto mb-6 border-4 border-bronze/50" />
+            <h3 class="font-serif text-2xl mb-2 text-amber">Molten Core</h3>
+            <p class="text-off-white/70">
+              A heart of luscious, flowing chocolate awaits within.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="py-24 md:py-40 bg-charcoal">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div class="gsap-reveal">
+            <img src="https://images.unsplash.com/photo-1542456563-00d3a56ae77b?q=80&w=2835&auto=format&fit=crop"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x400/121212/f5f0e6?text=Our+Craft';"
+              alt="The art of making Roti Goreng" class="rounded-lg shadow-2xl" />
+          </div>
+          <div class="gsap-reveal">
+            <h2 class="text-5xl md:text-6xl font-serif mb-6 text-amber">
+              The Craft Behind the Crispy
+            </h2>
+            <p class="text-lg leading-relaxed text-off-white/80 mb-8">
+              At Roti Goreng Cokelat Deluxe, we believe in the art of simplicity and quality. Our journey began with a
+              single goal: to perfect the harmony of textures and flavors. We meticulously craft each delicacy, from the
+              hand-kneaded dough to the decadent Belgian cacao filling, ensuring every bite is a testament to our
+              dedication to excellence.
+            </p>
+            <a href="#galeri"
+              class="inline-block px-8 py-3 rounded-full btn-amber font-semibold tracking-wider text-sm uppercase">
+              Explore Our Gallery
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- <section id="multimedia" class="py-24 md:py-40 bg-charcoal">
+        <div class="container mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div class="gsap-reveal">
+              <h2 class="text-5xl md:text-6xl font-serif mb-6 text-amber">
+                Experience The Film
+              </h2>
+              <p class="text-lg leading-relaxed text-off-white/80 mb-8">
+                Immerse yourself in the creation of our masterpiece. A short film that captures the dedication, precision,
+                and art that goes into every single Roti Goreng Cokelat Deluxe.
+              </p>
+              <a href="#" id="play-video-btn-2"
+                class="inline-block px-8 py-3 rounded-full btn-amber font-semibold tracking-wider text-sm uppercase">
+                Watch The Film
+              </a>
+            </div>
+            <div class="gsap-reveal">
+              <div id="video-thumbnail-2"
+                class="video-thumbnail relative rounded-lg shadow-2xl overflow-hidden cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=2864&auto=format&fit=crop"
+                  onerror="this.onerror=null;this.src='https://placehold.co/600x400/121212/f5f0e6?text=Video';"
+                  alt="Video thumbnail" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- <section id="about-us" class="py-24 md:py-40 bg-charcoal">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div class="gsap-reveal">
+            <div id="video-thumbnail"
+              class="video-thumbnail relative rounded-lg shadow-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=2864&auto=format&fit=crop"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/121212/f5f0e6?text=Video';"
+                alt="Video thumbnail" class="w-full h-auto" />
+            </div>
+          </div>
+          <div class="gsap-reveal">
+            <h2 class="text-5xl md:text-6xl font-serif mb-6 text-amber">
+              The Cinematic Experience
+            </h2>
+            <p class="text-lg leading-relaxed text-off-white/80 mb-8">
+              Immerse yourself in the creation of our masterpiece. A short
+              film that captures the dedication, precision, and art that goes
+              into every single Roti Goreng Cokelat Deluxe.
+            </p>
+            <a href="#" id="play-video-btn"
+              class="inline-block px-8 py-3 rounded-full btn-amber font-semibold tracking-wider text-sm uppercase">
+              Watch The Film
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- Gallery Section -->
+<section id="galeri" class="py-24 md:py-40 bg-[#1a1a1a]">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 md:mb-24">
+      <h2 class="gsap-reveal text-5xl md:text-6xl font-serif mb-4 text-amber">
+        Visual Showcase
+      </h2>
+      <p class="gsap-reveal max-w-2xl mx-auto text-lg text-off-white/80">
+        A feast for the eyes, capturing the art of indulgence.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="gsap-reveal md:col-span-2 rounded-lg overflow-hidden">
+        <img
+          class="gallery-item w-full h-full object-cover cursor-pointer transition-transform duration-500 hover:scale-105"
+          src="assets/img/makanan1.jpeg"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f5f0e6?text=Image+1';"
+          alt="Artistic presentation on a dark plate" />
+      </div>
+      <div class="gsap-reveal rounded-lg overflow-hidden">
+        <img
+          class="gallery-item w-full h-full object-cover cursor-pointer transition-transform duration-500 hover:scale-105"
+          src="assets/img/makanan2.jpeg"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f5f0e6?text=Image+2';"
+          alt="Close-up of the crispy texture" />
+      </div>
+      <div class="gsap-reveal rounded-lg overflow-hidden">
+        <img
+          class="gallery-item w-full h-full object-cover cursor-pointer transition-transform duration-500 hover:scale-105"
+          src="assets/img/makanan3.jpeg"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f5f0e6?text=Image+3';"
+          alt="Served with a side of coffee" />
+      </div>
+      <div class="gsap-reveal md:col-span-2 rounded-lg overflow-hidden">
+        <img
+          class="gallery-item w-full h-full object-cover cursor-pointer transition-transform duration-500 hover:scale-105"
+          src="assets/img/makanan4.jpeg"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/f5f0e6?text=Image+4';"
+          alt="The perfect cross-section view" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Multimedia Section -->
+    <section id="multimedia" class="py-24 md:py-40 bg-charcoal">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div class="gsap-reveal">
+            <h2 class="text-5xl md:text-6xl font-serif mb-6 text-amber">
+              The Cinematic Experience
+            </h2>
+            <p class="text-lg leading-relaxed text-off-white/80 mb-8">
+              Immerse yourself in the creation of our masterpiece. A short
+              film that captures the dedication, precision, and art that goes
+              into every single Roti Goreng Cokelat Deluxe.
+            </p>
+            <a href="#" id="play-video-btn"
+              class="inline-block px-8 py-3 rounded-full btn-amber font-semibold tracking-wider text-sm uppercase">
+              Watch The Film
+            </a>
+          </div>
+          <div class="gsap-reveal">
+            <div id="video-thumbnail"
+              class="video-thumbnail relative rounded-lg shadow-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=2864&auto=format&fit=crop"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/121212/f5f0e6?text=Video';"
+                alt="Video thumbnail" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-me" class="py-24 md:py-40 bg-[#1a1a1a]">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="gsap-reveal text-5xl md:text-6xl font-serif mb-6 text-amber">
+          Let's Get in Touch
+        </h2>
+        <p class="gsap-reveal max-w-3xl mx-auto text-lg leading-relaxed text-off-white/80 mb-12">
+          Have a question or just want to say hello? Find us on social media or reach out directly. We'd love to hear from you.
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 mb-16">
+          <div class="gsap-reveal text-center">
+            <h3 class="font-serif text-3xl mb-2 text-amber">Email Us</h3>
+            <a href="mailto:info@roti-goreng-deluxe.com" class="text-off-white/80 hover:text-amber transition-colors">info@roti-goreng-deluxe.com</a>
+          </div>
+          <div class="gsap-reveal text-center" data-gsap-delay="0.2">
+            <h3 class="font-serif text-3xl mb-2 text-amber">Call Us</h3>
+            <a href="tel:+628123456789" class="text-off-white/80 hover:text-amber transition-colors">+62 812-3456-789</a>
+          </div>
+        </div>
+
+        <div class="gsap-reveal">
+          <h3 class="font-serif text-3xl mb-6 text-amber">Find Us on Social Media</h3>
+          <div class="flex justify-center space-x-6 text-2xl">
+            <a href="https://www.instagram.com/roti-goreng-deluxe" target="_blank" aria-label="Instagram" class="text-off-white/70 hover:text-amber transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/roti-goreng-deluxe" target="_blank" aria-label="Facebook" class="text-off-white/70 hover:text-amber transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me/628123456789" target="_blank" aria-label="WhatsApp" class="text-off-white/70 hover:text-amber transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-5.65-5.65A19.79 19.79 0 0 1 2 5.18 2 2 0 0 1 4 3h3.07a2 2 0 0 1 2 1.74 15.61 15.61 0 0 0 .93 4.88 2 2 0 0 1-.43 2.15l-1.95 1.95a15.42 15.42 0 0 0 5.65 5.65l1.95-1.95a2 2 0 0 1 2.15-.43 15.61 15.61 0 0 0 4.88.93A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-[#0a0a0a] text-center">
+    <div class="container mx-auto px-6">
+      <p class="text-taupe">
+        &copy; 2025 Roti Goreng Cokelat Deluxe. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox"
+    class="fixed inset-0 bg-black/90 z-[60] flex items-center justify-center p-4 opacity-0 pointer-events-none">
+    <div class="relative max-w-5xl max-h-[90vh] scale-90">
+      <img id="lightbox-img" src="" alt="Enlarged view" class="w-full h-full object-contain rounded-lg" />
+      <button id="lightbox-close"
+        class="absolute -top-4 -right-4 md:top-2 md:-right-14 text-charcoal bg-amber rounded-full p-2 focus:outline-none hover:bg-opacity-80 transition-opacity">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal"
+    class="modal fixed inset-0 bg-charcoal/80 z-[60] flex items-center justify-center p-4 opacity-0 pointer-events-none">
+    <div id="video-modal-content" class="relative w-full max-w-4xl scale-90">
+      <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden shadow-2xl">
+        <iframe id="video-iframe" class="w-full h-full" src=""
+          data-src="https://www.youtube.com/embed/yNAFtADhzss?si=pdnq-IrGcBT99V3G&autoplay=1&rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <button id="video-modal-close"
+        class="absolute -top-4 -right-4 text-charcoal bg-amber rounded-full p-2 focus:outline-none hover:bg-opacity-80 transition-opacity">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
