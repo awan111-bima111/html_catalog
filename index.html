@@ -93,33 +93,33 @@
   </header>
 
   <main id="main-content" class="opacity-0">
-    <!-- Hero Section -->
-    <section id="hero"
-      class="h-screen min-h-[700px] flex items-center justify-center text-white relative overflow-hidden">
-      <video autoplay loop muted playsinline class="hero-video-bg">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-chocolate-is-poured-onto-a-brownie-4937-large.mp4"
-          type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="absolute inset-0 bg-charcoal/60"></div>
-      <div class="text-center z-10 p-6">
-        <div class="glassmorphism rounded-lg p-8 md:p-12">
-          <h1 id="hero-title" class="text-5xl md:text-7xl lg:text-8xl font-serif mb-4 text-off-white">
-            Golden Crispy, Molten Heart
-          </h1>
-          <p id="hero-subtitle" class="text-lg md:text-xl font-light tracking-widest text-amber">
-            Experience the Roti Goreng Cokelat Deluxe.
-          </p>
-        </div>
-      </div>
-      <a href="#deskripsi" class="scroll-indicator nav-link absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-        <svg class="w-6 h-6 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
-      </a>
-    </section>
+<section id="hero"
+  class="h-screen min-h-[700px] flex items-center justify-center text-white relative overflow-hidden">
+  
+  <img src="assets/img/background.jpg" 
+       onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517248135467-4c7edabd34bb?q=80&w=2940&auto=format&fit=crop';" 
+       alt="Interior of a cozy restaurant with warm lighting" 
+       class="hero-image-bg absolute inset-0 w-full h-full object-cover" />
 
+  <div class="absolute inset-0 bg-charcoal/60"></div>
+  
+  <div class="text-center z-10 p-6">
+    <div class="glassmorphism rounded-lg p-8 md:p-12">
+      <h1 id="hero-title" class="text-5xl md:text-7xl lg:text-8xl font-serif mb-4 text-off-white">
+        Golden Crispy, Molten Heart
+      </h1>
+      <p id="hero-subtitle" class="text-lg md:text-xl font-light tracking-widest text-amber">
+        Experience the Roti Goreng Cokelat Deluxe.
+      </p>
+    </div>
+  </div>
+  <a href="#deskripsi" class="scroll-indicator nav-link absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
+    <svg class="w-6 h-6 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </a>
+</section>
 
     <!-- Description Section -->
     <section id="deskripsi" class="py-24 md:py-40 bg-charcoal">
@@ -372,14 +372,68 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="py-16 bg-[#0a0a0a] text-center">
+  <footer class="bg-[#0a0a0a] text-off-white py-16">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+    
+    <div>
+      <a href="#" class="text-3xl font-serif font-bold tracking-widest text-amber">RGCD</a>
+      <p class="mt-4 text-sm text-taupe max-w-xs mx-auto md:mx-0">
+        Taste the perfect harmony of textures and flavors. Handcrafted with passion and the finest ingredients.
+      </p>
+    </div>
+    
+    <div class="mt-8 md:mt-0">
+      <h4 class="font-serif text-xl text-amber mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li>
+          <a href="#deskripsi" class="text-off-white/80 hover:text-amber transition-colors">The Story</a>
+        </li>
+        <li>
+          <a href="#about-us" class="text-off-white/80 hover:text-amber transition-colors">About Us</a>
+        </li>
+        <li>
+          <a href="#galeri" class="text-off-white/80 hover:text-amber transition-colors">Showcase</a>
+        </li>
+        <li>
+          <a href="#multimedia" class="text-off-white/80 hover:text-amber transition-colors">Multimedia</a>
+        </li>
+        <li>
+          <a href="#contact-me" class="text-off-white/80 hover:text-amber transition-colors">Contact</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mt-8 md:mt-0">
+      <h4 class="font-serif text-xl text-amber mb-4">Contact Us</h4>
+      <p class="text-off-white/80 mb-2">info@roti-goreng-deluxe.com</p>
+      <p class="text-off-white/80 mb-6">+62 812-3456-789</p>
+      <div class="flex justify-center md:justify-start space-x-4">
+        <a href="https://www.instagram.com/roti-goreng-deluxe" target="_blank" aria-label="Instagram" class="text-taupe hover:text-amber transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.25.148 4.779 1.416 4.978 4.978.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.25-1.416 4.779-4.978 4.978-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.25-.148-4.779-1.416-4.978-4.978-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.25 1.416-4.779 4.978-4.978 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.328 0-3.729.014-5.068.072-4.148.188-5.839 1.583-6.028 6.028-.058 1.339-.072 1.74-.072 5.068s.014 3.729.072 5.068c.188 4.148 1.583 5.839 6.028 6.028 1.339.058 1.74.072 5.068.072s3.729-.014 5.068-.072c4.148-.188 5.839-1.583 6.028-6.028.058-1.339.072-1.74.072-5.068s-.014-3.729-.072-5.068c-.188-4.148-1.583-5.839-6.028-6.028-1.339-.058-1.74-.072-5.068-.072zM12 7c-2.761 0-5 2.239-5 5s2.239 5 5 5 5-2.239 5-5-2.239-5-5-5zm0 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm5.725-7.14c0 .64-.52.923-.9.923s-.9-.283-.9-.923.283-.9.9-.9.9.283.9.9z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/roti-goreng-deluxe" target="_blank" aria-label="Facebook" class="text-taupe hover:text-amber transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.542-1.333h2.458v-4h-3.236c-3.297 0-4.764 1.956-4.764 4.686v2.314z"/></svg>
+        </a>
+        <a href="https://wa.me/628123456789" target="_blank" aria-label="WhatsApp" class="text-taupe hover:text-amber transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 18.468c-.004-.012-.008-.024-.011-.036-.011-.044-.022-.089-.028-.133-.008-.063-.014-.127-.019-.191-.002-.022-.004-.045-.005-.067-.003-.04-.005-.08-.006-.122s-.002-.085-.002-.128c0-.022 0-.044.001-.066.002-.045.004-.089.006-.134.005-.07.01-.14.016-.21.003-.032.006-.064.009-.096.012-.132.023-.265.039-.397.006-.05.013-.1.02-.15.01-.08.02-.16.031-.24.005-.04.01-.08.016-.12.016-.12.032-.24.05-.36.008-.057.017-.114.026-.171.012-.078.024-.156.039-.234.007-.038.014-.075.021-.113.018-.098.036-.196.056-.293.007-.035.015-.069.023-.104.021-.101.043-.201.066-.301.007-.03.015-.06.022-.09.025-.101.05-.201.077-.3.007-.024.014-.049.022-.073.027-.101.055-.201.084-.301.008-.028.016-.056.025-.083.029-.1.06-.2.09-.299.008-.024.017-.047.025-.07.03-.092.062-.183.095-.275.009-.025.018-.05.028-.074.032-.092.066-.183.101-.274.01-.025.02-.05.03-.075.034-.092.07-.183.107-.272.01-.02.022-.041.033-.061.035-.09.072-.178.111-.266.011-.02.022-.039.034-.058.04-.09.082-.178.125-.264.01-.02.023-.038.035-.057.043-.087.089-.174.137-.259.012-.02.025-.037.038-.056.046-.088.096-.173.146-.258.013-.02.026-.037.04-.055.053-.08.111-.158.172-.234.015-.02.03-.037.047-.054.062-.078.13-.156.202-.23.017-.02.034-.038.053-.057.073-.076.155-.152.241-.225.02-.018.041-.035.062-.053.088-.073.187-.145.29-.215.022-.015.044-.03.067-.044.113-.07.24-.139.375-.202.025-.013.05-.026.075-.04.136-.067.283-.129.434-.188.028-.01.056-.02.085-.029.155-.06.326-.11.5-.15.03-.008.06-.015.09-.023.18-.05.37-.09.566-.12.03-.005.06-.01.09-.015.204-.04.417-.07.636-.09.02-.002.04-.004.06-.005.22-.02.45-.03.684-.03.01 0 .02 0 .03.001 0 0 .005.001.008.001 11.231 0 13.911-.184 14.286-1.571l.036-.091c.074-.187.114-.388.114-.627 0-.39-.148-.737-.428-1.018-.28-.28-.628-.428-1.018-.428h-.022c-.39 0-.738.148-1.018.428-.28.28-.428.627-.428 1.018 0 .239.04.44.114.627l-.022.052c-.089.215-.227.42-.444.634-.216.214-.421.353-.634.444l-.052.022c-.187.074-.388.114-.627.114h-.021c-.39 0-.737-.148-1.018-.428-.28-.28-.428-.628-.428-1.018 0-.39.148-.738.428-1.018.28-.28.627-.428 1.018-.428h.021c.39 0 .737.148 1.018.428.28.28.428.628.428 1.018v.021c0 .39-.148.738-.428 1.018-.28.28-.628.428-1.018.428h-.021c-.39 0-.738-.148-1.018-.428-.28-.28-.428-.627-.428-1.018v-.022c0-.39.148-.737.428-1.018.28-.28.627-.428 1.018-.428h.021c.39 0 .738.148 1.018.428.28.28.428.628.428 1.018v.021c0 .39-.148.737-.428 1.018-.28.28-.627.428-1.018.428h-.022c-3.328 0-3.729-.014-5.068-.072-4.148-.188-5.839-1.583-6.028-6.028-.058-1.339-.072-1.74-.072-5.068s.014-3.729.072-5.068c.188-4.148 1.583-5.839 6.028-6.028 1.339-.058 1.74-.072 5.068-.072h1.684z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mt-12 pt-8 border-t border-taupe/20 text-center">
+    <p class="text-taupe text-sm">
+      &copy; 2025 Roti Goreng Cokelat Deluxe. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+  <!-- <footer class="py-16 bg-[#0a0a0a] text-center">
     <div class="container mx-auto px-6">
       <p class="text-taupe">
         &copy; 2025 Roti Goreng Cokelat Deluxe. All Rights Reserved.
       </p>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Lightbox -->
   <div id="lightbox"
@@ -394,26 +448,24 @@
       </button>
     </div>
   </div>
-
-  <!-- Video Modal -->
-  <div id="video-modal"
-    class="modal fixed inset-0 bg-charcoal/80 z-[60] flex items-center justify-center p-4 opacity-0 pointer-events-none">
-    <div id="video-modal-content" class="relative w-full max-w-4xl scale-90">
-      <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden shadow-2xl">
-        <iframe id="video-iframe" class="w-full h-full" src=""
-          data-src="https://www.youtube.com/embed/yNAFtADhzss?si=pdnq-IrGcBT99V3G&autoplay=1&rel=0"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-      <button id="video-modal-close"
-        class="absolute -top-4 -right-4 text-charcoal bg-amber rounded-full p-2 focus:outline-none hover:bg-opacity-80 transition-opacity">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
+<div id="video-modal"
+  class="modal fixed inset-0 bg-charcoal/80 z-[60] flex items-center justify-center p-4 opacity-0 pointer-events-none">
+  <div id="video-modal-content" class="relative w-full max-w-xl lg:max-w-4xl">
+    <div class="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+      <iframe id="video-iframe" class="w-full h-full" src=""
+        data-src="https://www.youtube.com/embed/yNAFtADhzss?si=pdnq-IrGcBT99V3G&autoplay=1&rel=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
+    <button id="video-modal-close"
+      class="absolute -top-4 -right-4 text-charcoal bg-amber rounded-full p-2 focus:outline-none hover:bg-opacity-80 transition-opacity">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
   </div>
+</div>
   <script src="assets/js/main.js"></script>
 </body>
 
