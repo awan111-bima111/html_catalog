@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Bite - Roti Goreng Cokelat Premium</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Warna dasar kuning pucat */
+            color: #4E342E; /* Coklat tua untuk teks */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/4A2E2A/FFFFFF?text=Roti+Goreng+Cokelat');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            background-color: #D35400; /* Oranye */
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #E67E22;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-center items-center">
+            <h1 class="text-2xl font-bold text-[#4A2E2A]">The Golden Bite</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-screen flex items-center justify-center text-white text-center relative">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 p-6">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 animate-fade-in-down">Sensasi Cokelat Premium</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in-up">Rasakan kemewahan roti goreng renyah dengan lelehan cokelat Belgia murni di setiap gigitan.</p>
+                <a href="#deskripsi" class="btn-primary font-semibold py-3 px-8 rounded-full inline-block">
+                    Jelajahi Rasa
+                </a>
+            </div>
+        </section>
+
+        <!-- Deskripsi Produk Section -->
+        <section id="deskripsi" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in-up">
+                        <img src="https://placehold.co/600x700/FFC107/4A2E2A?text=The+Golden+Bite" alt="Roti Goreng Cokelat dari dekat" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                    </div>
+                    <div class="fade-in-up" style="transition-delay: 200ms;">
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-6">Mahakarya Rasa</h2>
+                        <p class="text-lg mb-4 text-justify">
+                            The Golden Bite bukan sekadar roti goreng biasa. Kami memadukan adonan roti berkualitas tinggi yang digoreng hingga mencapai warna keemasan sempurna, menciptakan tekstur renyah di luar namun tetap lembut di dalam.
+                        </p>
+                        <p class="text-lg text-justify">
+                            Isiannya adalah lelehan cokelat Belgia premium yang kaya rasa, memberikan pengalaman manis yang elegan dan tak terlupakan. Setiap gigitan adalah perayaan cita rasa yang diracik dengan penuh ketelitian dan cinta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="py-20 lg:py-32 bg-[#4A2E2A] text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 fade-in-up">Proses Pembuatan Kami</h2>
+                <p class="max-w-3xl mx-auto mb-12 fade-in-up" style="transition-delay: 200ms;">Lihat bagaimana kami menciptakan setiap potong The Golden Bite dengan standar kualitas tertinggi.</p>
+                <div class="aspect-video max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl fade-in-up" style="transition-delay: 400ms;">
+                    <!-- Ganti URL dengan link video YouTube Anda -->
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poster Section -->
+        <section id="poster" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-4 fade-in-up">Galeri Seni Rasa</h2>
+                    <p class="max-w-3xl mx-auto fade-in-up" style="transition-delay: 200ms;">Sebuah persembahan visual dari keindahan The Golden Bite.</p>
+                </div>
+                <div class="w-full max-w-3xl mx-auto fade-in-up" style="transition-delay: 400ms;">
+                    <img src="https://placehold.co/1200x800/D35400/FFFFFF?text=Poster+Promosi" alt="Poster Promosi Roti Goreng Cokelat" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#4A2E2A] text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 The Golden Bite. All Rights Reserved.</p>
+            <p class="text-sm text-yellow-100/70 mt-2">Dibuat dengan passion untuk rasa yang sempurna.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Script untuk animasi fade-in saat scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 // elemen akan muncul saat 10% terlihat
+            });
+
+            const elementsToAnimate = document.querySelectorAll('.fade-in-up');
+            elementsToAnimate.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
